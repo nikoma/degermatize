@@ -1,6 +1,6 @@
 # Degermatize
 
-TODO: Write a gem description
+This gem adds the degermatize and degermatize! methods to String objects. It replaces German umlauts like "üäöÄÖÜß" with a ASCII representation.
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+str = "Rüben füttern die Ärmsten".degermatize
+# => "Rueben fuettern die Aermsten"
+# str => "Rüben füttern die Ärmsten"
+
+str = "Rüben füttern die Ärmsten".degermatize!
+# => "Rueben fuettern die Aermsten"
+# str => "Rueben fuettern die Aermsten"
+
+
 
 ## Contributing
 

@@ -1,5 +1,19 @@
-require "degermatize/version"
+# -*- encoding: utf-8 -*-
 
-module Degermatize
-  # Your code goes here...
+require "degermatize/version"
+  class String
+    def degermatize
+      dict = { 'ä' => 'ae', 'ü' => 'ue', 'ö' => 'oe','Ä' => 'Ae','Ö' => 'Oe','Ü' => 'Ue', 'ß' => 'ss' }
+       self.gsub /[üäöÄßÖÜ]/ do |match|
+        dict[match.to_s]
+      end
+    end
+    def degermatize!
+      dict = { 'ä' => 'ae', 'ü' => 'ue', 'ö' => 'oe','Ä' => 'Ae','Ö' => 'Oe','Ü' => 'Ue', 'ß' => 'ss' }
+       self.gsub! /[üäöÄßÖÜ]/ do |match|
+        dict[match.to_s]
+      end
+    end 
 end
+
+
