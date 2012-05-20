@@ -19,12 +19,20 @@ Or install it yourself as:
 ## Usage
 
 str = "Rüben füttern die Ärmsten".degermatize
-# => "Rueben fuettern die Aermsten"
-# str => "Rüben füttern die Ärmsten"
+
+ => "Rueben fuettern die Aermsten" 
+ 
+str => "Rüben füttern die Ärmsten"
+
+
+(with bang! Instant replacement)
 
 str = "Rüben füttern die Ärmsten".degermatize!
-# => "Rueben fuettern die Aermsten"
-# str => "Rueben fuettern die Aermsten"
+
+ => "Rueben fuettern die Aermsten"
+ 
+str => "Rueben fuettern die Aermsten"
+ 
 
 
 
