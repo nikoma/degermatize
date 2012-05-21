@@ -14,4 +14,5 @@ class DegermatizeTest < Test::Unit::TestCase
     assert_equal str.degermatize!, "ueaeoeAessOeUe"
     assert_equal str,  "ueaeoeAessOeUe"
   end
+  
 end

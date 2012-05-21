@@ -2,10 +2,10 @@
 require File.expand_path('../lib/degermatize/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Nikolai Manek"]
-  gem.email         = ["niko.manek@gmail.com"]
-  gem.description   = ["This gem adds the degermatize and degermatize! methods to String objects. It replaces German umlauts like \"üäöÄÖÜß\" with a ASCII representation."]
-  gem.summary       = ["This gem adds the degermatize and degermatize! methods to String objects. It replaces German umlauts like \"üäöÄÖÜß\" with a ASCII representation."]
+  gem.authors       = "Nikolai Manek"
+  gem.email         = "niko.manek@gmail.com"
+  gem.description   = "This gem adds the degermatize and degermatize! methods to String objects. It replaces German umlauts like \"üäöÄÖÜß\" with a ASCII representation."
+  gem.summary       = "This gem adds the degermatize and degermatize! methods to String objects. It replaces German umlauts like \"üäöÄÖÜß\" with a ASCII representation."
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
